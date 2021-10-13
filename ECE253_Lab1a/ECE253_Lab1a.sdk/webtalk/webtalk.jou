@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Sun Oct 10 01:13:08 2021
+# Process ID: 17748
+# Current directory: C:/Users/jabbo/Desktop/ECE253_Lab1a/ECE253_Lab1a.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/jabbo/Desktop/ECE253_Lab1a/ECE253_Lab1a.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/jabbo/Desktop/ECE253_Lab1a/ECE253_Lab1a.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

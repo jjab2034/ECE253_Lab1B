@@ -1,0 +1,29 @@
+10:55:19 **** Auto Build of configuration Debug for project ECE253_Lab1a_Proj1 ****
+make all 
+'Building file: ../src/extra.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/extra.o" -I../../ECE253_Lab1a_Proj1_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/extra.d" -MT"src/extra.o" -o "src/extra.o" "../src/extra.c"
+In file included from ../src/extra.h:7,
+                 from ../src/extra.c:1:
+../../ECE253_Lab1a_Proj1_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../ECE253_Lab1a_Proj1_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/extra.c'
+' '
+'Building target: ECE253_Lab1a_Proj1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ECE253_Lab1a_Proj1_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ECE253_Lab1a_Proj1.elf"  ./src/extra.o ./src/platform.o ./src/timing.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ECE253_Lab1a_Proj1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ECE253_Lab1a_Proj1.elf  |tee "ECE253_Lab1a_Proj1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22768	   1804	4237780	4262352	 4109d0	ECE253_Lab1a_Proj1.elf
+'Finished building: ECE253_Lab1a_Proj1.elf.size'
+' '
+
+10:55:20 Build Finished (took 662ms)
+

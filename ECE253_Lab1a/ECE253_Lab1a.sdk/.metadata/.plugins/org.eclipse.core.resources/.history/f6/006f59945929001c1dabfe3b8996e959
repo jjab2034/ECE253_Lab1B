@@ -1,0 +1,9 @@
+/*
+ * interrupts.c
+ *
+ *  Created on: Oct 9, 2021
+ *      Author: jabbo
+ */
+XIntc sys_intc;
+XTmrCtr sys_tmrctr;
+Xuint32 data;

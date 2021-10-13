@@ -1,0 +1,29 @@
+11:30:11 **** Auto Build of configuration Debug for project Lab_1b_Stopwatch ****
+make all 
+'Building file: ../src/main_loop.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_loop.o" -I../../Lab_1b_Stopwatch_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_loop.d" -MT"src/main_loop.o" -o "src/main_loop.o" "../src/main_loop.c"
+In file included from ../src/interrupts.h:13,
+                 from ../src/main_loop.c:8:
+../../Lab_1b_Stopwatch_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../Lab_1b_Stopwatch_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/main_loop.c'
+' '
+'Building target: Lab_1b_Stopwatch.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Lab_1b_Stopwatch_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Lab_1b_Stopwatch.elf"  ./src/interrupts.o ./src/main_loop.o ./src/platform.o ./src/sevenSeg_new.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab_1b_Stopwatch.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Lab_1b_Stopwatch.elf  |tee "Lab_1b_Stopwatch.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12472	    740	   2372	  15584	   3ce0	Lab_1b_Stopwatch.elf
+'Finished building: Lab_1b_Stopwatch.elf.size'
+' '
+
+11:30:12 Build Finished (took 606ms)
+

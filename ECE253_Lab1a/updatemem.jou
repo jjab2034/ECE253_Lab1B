@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Thu Oct  7 09:24:50 2021
+# Process ID: 29688
+# Current directory: C:/Users/jabbo/Desktop/ECE253_Lab1a
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2019.1/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/Users/jabbo/Desktop/ECE253_Lab1a/ECE253_Lab1a.sdk/system_wrapper_hw_platform_0/system_wrapper.mmi -data C:/Xilinx/SDK/2019.1/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc system_i/microblaze_0 -bit C:/Users/jabbo/Desktop/ECE253_Lab1a/ECE253_Lab1a.sdk/system_wrapper_hw_platform_0/system_wrapper.bit -out C:/Users/jabbo/Desktop/ECE253_Lab1a/ECE253_Lab1a.sdk/system_wrapper_hw_platform_0/download.bit -force
+# Log file: C:/Users/jabbo/Desktop/ECE253_Lab1a/updatemem.log
+# Journal file: C:/Users/jabbo/Desktop/ECE253_Lab1a\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/SDK/2019.1/scripts/updatemem/main.tcl -notrace

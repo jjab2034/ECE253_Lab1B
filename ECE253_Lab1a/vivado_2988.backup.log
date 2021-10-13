@@ -1,0 +1,118 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct  6 21:20:15 2021
+# Process ID: 2988
+# Current directory: C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14548 C:\Users\jabbo\iCloudDrive\School\Fall 2021\ECE 253\ECE253_Lab1a\ECE253_Lab1a.xpr
+# Log file: C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/vivado.log
+# Journal file: C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.xpr}
+WARNING: [Board 49-91] Board repository path 'C:/Users/jabbo/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+INFO: [Project 1-313] Project file moved from '/fs/student/jjabbour/ECE253_Lab1a' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/Downloads/lab_files_2021/vivado/seven/ip_repo', nor could it be found using path 'C:/fs/student/jjabbour/Downloads/lab_files_2021/vivado/seven/ip_repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/Downloads/lab_files_2021/vivado/seven/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_sevenSeg_0_0
+
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 974.004 ; gain = 268.773
+update_compile_order -fileset sources_1
+reset_run system_mig_7series_0_0_synth_1
+reset_run system_microblaze_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_mig_7series_0_0, cache-ID = 91ff4830f3aedc02; cache size = 40.402 MB.
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP 'C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.srcs/sources_1/bd/system/ip/system_mig_7series_0_0/system_mig_7series_0_0.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+[Wed Oct  6 21:21:52 2021] Launched system_mig_7series_0_0_synth_1, system_microblaze_0_0_synth_1...
+Run output will be captured here:
+system_mig_7series_0_0_synth_1: C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.runs/system_mig_7series_0_0_synth_1/runme.log
+system_microblaze_0_0_synth_1: C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.runs/system_microblaze_0_0_synth_1/runme.log
+[Wed Oct  6 21:21:52 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_mig_7series_0_0, cache-ID = 91ff4830f3aedc02; cache size = 40.402 MB.
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP 'C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.srcs/sources_1/bd/system/ip/system_mig_7series_0_0/system_mig_7series_0_0.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+[Wed Oct  6 21:22:51 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.runs/impl_1/runme.log
+open_bd_design {C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.srcs/sources_1/bd/system/system.bd}
+Adding component instance block -- xilinx.com:ip:mig_7series:4.2 - mig_7series_0
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_100M
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_1
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_led
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_btn
+Adding component instance block -- HLS_Pulsar:user:sevenSeg:1.0 - sevenSeg_0
+Successfully read diagram <system> from BD file <C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.srcs/sources_1/bd/system/system.bd>
+reset_run synth_1
+reset_run system_mig_7series_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_mig_7series_0_0, cache-ID = 91ff4830f3aedc02; cache size = 40.402 MB.
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP 'C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.srcs/sources_1/bd/system/ip/system_mig_7series_0_0/system_mig_7series_0_0.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+[Wed Oct  6 21:27:29 2021] Launched system_mig_7series_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_mig_7series_0_0_synth_1: C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.runs/system_mig_7series_0_0_synth_1/runme.log
+synth_1: C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.runs/synth_1/runme.log
+[Wed Oct  6 21:27:29 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.runs/impl_1/runme.log
+launch_sdk -workspace {C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk} -hwspec {C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk/system_wrapper.hdf}
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk -hwspec C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace {C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk} -hwspec {C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk/system_wrapper.hdf}
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk -hwspec C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace {C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk} -hwspec {C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk/system_wrapper.hdf}
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk -hwspec C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace {C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk} -hwspec {C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk/system_wrapper.hdf}
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk -hwspec C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+close_project
+open_project {C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.xpr}
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/Downloads/lab_files_2021/vivado/seven/ip_repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/Downloads/lab_files_2021/vivado/seven/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_sevenSeg_0_0
+
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2038.715 ; gain = 0.000
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace {C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk} -hwspec {C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk/system_wrapper.hdf}
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk -hwspec C:/Users/jabbo/iCloudDrive/School/Fall 2021/ECE 253/ECE253_Lab1a/ECE253_Lab1a.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  6 21:38:34 2021...
